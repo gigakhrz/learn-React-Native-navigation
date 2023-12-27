@@ -17,6 +17,14 @@ import {
   View,
 } from 'react-native';
 
+// navigations
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+//Screens
+import Home from './Home';
+import Details from './Details';
+
 function App(): React.JSX.Element {
   return <></>;
 }

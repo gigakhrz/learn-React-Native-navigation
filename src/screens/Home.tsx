@@ -1,9 +1,15 @@
 import {StyleSheet, Text, View} from 'react-native';
 
-const Home = (): JSX.Element => {
+// navigation
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {RootStackParamList} from '../App';
+
+type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
+
+const Home = ({navigation}: HomeProps): JSX.Element => {
   return (
-    <View>
-      <Text>Home</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>Home</Text>
     </View>
   );
 };

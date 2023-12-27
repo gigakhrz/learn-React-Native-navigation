@@ -14,8 +14,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 //Screens
-import Home from './Home';
-import Details from './Details';
+import Home from './screens/Home';
+import Details from './screens/Details';
 
 const stack = createNativeStackNavigator<RootStackParamList>();
 

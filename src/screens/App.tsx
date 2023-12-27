@@ -25,6 +25,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './Home';
 import Details from './Details';
 
+export type RootStackParamList = {
+  Home: undefined;
+  Details: {productId: string};
+};
+
 function App(): React.JSX.Element {
   return <></>;
 }
